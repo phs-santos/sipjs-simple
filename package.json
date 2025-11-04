@@ -1,14 +1,22 @@
 {
   "name": "@phs-santos/sipjs-simple",
   "version": "1.0.0",
-  "description": "Uma biblioteca que simplifica a API do SIP.js, tornando mais fácil a integração e o uso de funcionalidades SIP em seus projetos.",
+  "description": "Abstração simplificada do SIP.js para projetos WebRTC.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "deploy": "npm publish"
+    "version:patch": "npm version patch -m 'chore(release): bump version to %s'",
+    "version:minor": "npm version minor -m 'chore(release): bump version to %s'",
+    "version:major": "npm version major -m 'chore(release): bump version to %s'",
+    "version:beta": "npm version prerelease --preid=beta -m 'chore(release): bump beta version to %s'",
+    "deploy": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phs-santos/sipjs-simple.git"
   },
   "keywords": [
     "sip",
@@ -16,7 +24,10 @@
     "webrtc",
     "sip.js"
   ],
-  "author": "Paulo Souza <paulo18santos2000@gmail.com>",
+  "author": "Paulo Henrique Souza <paulo18santos2000@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/phs-santos/sipjs-simple/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.10.7",
