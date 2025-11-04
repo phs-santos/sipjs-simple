@@ -22,7 +22,7 @@
     "@types/node": "^22.10.7",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.3",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "sip.js": "^0.21.2"
