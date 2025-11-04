@@ -1,6 +1,6 @@
 {
   "name": "@phs-santos/sipjs-simple",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Abstração simplificada do SIP.js para projetos WebRTC.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
