@@ -12,7 +12,8 @@
     "version:minor": "npm version minor -m 'chore(release): bump version to %s'",
     "version:major": "npm version major -m 'chore(release): bump version to %s'",
     "version:beta": "npm version prerelease --preid=beta -m 'chore(release): bump beta version to %s'",
-    "deploy": "npm run build && npm publish --access public"
+    "deploy": "npm run build && npm publish --access public",
+    "release:push": "git push origin main --tags"
   },
   "repository": {
     "type": "git",
